@@ -1,0 +1,10 @@
+{
+  "name": "waverleyChallenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "web": "cd web && npm run dev",
+    "api": "cd backend && node app.js"
+  }
+}
