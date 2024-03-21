@@ -18,8 +18,7 @@ const TextOutputContainer = styled.div`
     }
 `;
 
-const TextOutput = ({ summarizedText, ratio }) => {
-    const temporaryRatio = ratio;
+const TextOutput = ({ summarizedText, confidenceScore }) => {
 
     return (
         <TextOutputContainer>
@@ -29,7 +28,7 @@ const TextOutput = ({ summarizedText, ratio }) => {
             {summarizedText && (
                 <>
                     <p className='text-length'>Result length: {summarizedText?.length}</p>
-                    <p>Ratio: {temporaryRatio}</p> {/* Use the temporaryRatio constant */}
+                    <p>Confidence Score: {confidenceScore}</p>
                 </>
             )}
         </TextOutputContainer>
